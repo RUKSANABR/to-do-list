@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f06, #4a90e2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.app-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.new-task {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.new-task input,
+.new-task select,
+.new-task button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.new-task input::placeholder {
+    color: #bbb;
+}
+
+.new-task button {
+    background: #4a90e2;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.new-task button:hover {
+    background: #357ab6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #ddd;
+}
+
+.low-priority {
+    border-left: 5px solid #28a745;
+}
+
+.medium-priority {
+    border-left: 5px solid #ffc107;
+}
+
+.high-priority {
+    border-left: 5px solid #dc3545;
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-info .task-text {
+    flex-grow: 1;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.task-actions .edit {
+    color: #ffc107;
+}
+
+.task-actions .delete {
+    color: #dc3545;
+}
+
+.task-actions button:hover {
+    color: #fff;
+}
+
+.task-actions button:focus {
+    outline: none;
+}
+
+.date-added {
+    font-size: 0.8rem;
+    color: #ddd;
+}
